@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+
+    <title>Bulk Email Sender</title>
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Email Sender with Attatchments </h1>
+        <form method="post">
+            <div class="txt_field">
+                <input name="email" type="text" required>
+                <label>Email Id</label>
+                <span></span>
+            </div>
+            <div class="txt_field">
+                <input name="password" type="password" required>
+                <label>password</label>
+                <span></span>
+            </div>
+            <div class="txt_field">
+                <input name='subject' type="text" required>
+                <label>Subject</label>
+                <span></span>
+            </div>
+            <div class="emailBody">
+                <label>Body</label>
+                <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                <span></span>
+
+                <span></span>
+            </div>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- link the form input in html to second html file -->
