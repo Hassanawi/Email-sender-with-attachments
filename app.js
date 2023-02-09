@@ -30,7 +30,6 @@ app.get('/index', async (req, res) => {
 
     await EmailSender(email, password, subject, body);
     res.render('index');
-
 });
 
 app.listen(8000, () => {

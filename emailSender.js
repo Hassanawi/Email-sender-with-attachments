@@ -8,7 +8,6 @@ EmailSemder = function emailSender(
     subject,
     emailtext
 ) {
-
     attachmentspath = `./attachments/`
     workbook = xlsx.readFile('./Names_emails.xlsx');
     worksheet = workbook.SheetNames[0];
@@ -19,8 +18,6 @@ EmailSemder = function emailSender(
     var rowscount = range.e.r;
     emailsent = 0
     emailNotSent = 0
-
-
 
     const c = counter(rowscount);
     c.finished.then(() => writingResponse(md));
@@ -137,9 +134,6 @@ EmailSemder = function emailSender(
         readingExcelFile();
     }
     main()
-
-    return emailsent, emailNotSent
-
 }
 module.exports = EmailSemder
 
